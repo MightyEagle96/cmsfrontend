@@ -12,3 +12,6 @@ body {
   min-height: 70vh;
   background-color: #fafafa;
 }
+.text{
+  font-weight: 500;
+}
