@@ -8,3 +8,7 @@
 body {
   font-family: "Jost", sans-serif;
 }
+.sideMenu {
+  min-height: 70vh;
+  background-color: #fafafa;
+}

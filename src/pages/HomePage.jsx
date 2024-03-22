@@ -17,7 +17,11 @@ function HomePage() {
     });
 
     if (data) {
-      setAlertData({ open: true, message: data, severity: "success" });
+      localStorage.setItem(
+        process.env.REACT_APP_PROJECT_USER,
+        JSON.stringify(data)
+      );
+      window.location.assign("/");
     }
     if (error) {
       setAlertData({ open: true, message: error, severity: "error" });
