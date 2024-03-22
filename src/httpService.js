@@ -8,7 +8,7 @@ const httpService = axios.create({
   baseURL: process.env.REACT_APP_BACKEND_URL,
   //baseURL: dynamicURL,
   timeout: 180000,
-  withCredentials: "include",
+  //withCredentials: "include",
   headers: {
     "Content-Type": "application/json",
     accountid: loggedInUser ? loggedInUser._id : "",
