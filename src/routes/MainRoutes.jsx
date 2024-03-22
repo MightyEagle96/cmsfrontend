@@ -5,16 +5,24 @@ import { loggedInUser } from "../httpService";
 import Dashboard from "../pages/private/Dashboard";
 import NavigationBar from "../components/Navbar";
 import SideMenu from "../components/SideMenu";
+import InboxPage from "../pages/InboxPage";
+import SentPage from "../pages/SentPage";
 function MainRoutes() {
-  const privateRoutes = [{ path: "/", page: Dashboard }];
+  const privateRoutes = [
+    { path: "/", page: Dashboard },
+    { path: "/inbox", page: InboxPage},
+    { path: "/sent", page: SentPage}
+  ];
   const publicRoutes = [{ path: "/", page: HomePage }];
+  
+
   return (
     <BrowserRouter>
       {loggedInUser && <NavigationBar />}
 
       {loggedInUser ? (
         <>
-          <div className="row">
+          <div className="row m-0">
             <div className="col-lg-2 sideMenu">
               <SideMenu />
             </div>
