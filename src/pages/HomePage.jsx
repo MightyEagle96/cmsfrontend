@@ -18,9 +18,9 @@ function HomePage() {
                 JAMB Centre Messaging System
               </h2>
               <div className="col-lg-8">
-                <p>
+                <p style={{ color: "#385170" }}>
                   Correspondence platform between JAMB Centres and Information
-                  Technology Services
+                  Technology Services Department.
                 </p>
               </div>
             </div>
