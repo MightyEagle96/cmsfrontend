@@ -6,12 +6,13 @@
 }
 
 body {
+  color: #393e46;
   font-family: "Jost", sans-serif;
 }
 .sideMenu {
   min-height: 70vh;
   background-color: #fafafa;
 }
-.text{
+.text {
   font-weight: 500;
 }
